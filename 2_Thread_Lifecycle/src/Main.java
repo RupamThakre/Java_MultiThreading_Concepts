@@ -1,3 +1,14 @@
+/*
+* Thread lifecycle in 5 parts
+*
+* 1. NEW - Thread is created but not started yet [Thread t = new Thread()]
+* 2. RUNNABLE - calling .start() method [t.start()] Ready to run - but waiting for CPU to allocate it
+* 3. RUNNING - when the CPU actually executing the thread
+* 4. BLOCKED/WAITING/SLEEPING - Thread.sleep(1000) | waiting - another thread |
+* 5. TERMINATED -
+*
+* */
+
 public class Main {
     public static void main(String[] args) {
 
