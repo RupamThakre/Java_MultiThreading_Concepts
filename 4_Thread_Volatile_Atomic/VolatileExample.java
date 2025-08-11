@@ -47,6 +47,13 @@ class VolatileExample {
 * In this case with using volatile keyword,
 *  t1 sees the updated flag = false value and exits the loop properly
 * This happens because volatile ensures visiblility between threads.
+*
+* - Read the latest value from Main memory instead of cached memory
+*
+*Limitations
+* - only used for simple flag
+* - todo more complex object need to use atomic keyword
+*
 * */
 
 
